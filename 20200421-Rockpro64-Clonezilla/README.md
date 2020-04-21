@@ -48,6 +48,8 @@ The [ROCKPro64][] is a powerful Single Board Computer released by Pine64. It is 
                 nouveau.blacklist=yes vmwgfx.enable_fbdev=1 \
                 ocs_live_run_tty=/dev/ttyS2
 
+    (Rememer to make the above in ONE line. It's a must for kernel to read.)
+
     Of course, the serial console device name in `ocs_live_run_tty` has to match your environment. Then press `Ctrl-X` to boot it.
 
  6. Wait a while, and you should be able to see the main menu of Clonezilla live, then you can save your disk as an image, restore the image, or clone the disks. More docs are available on Clonezilla website: https://clonezilla.org/clonezilla-live-doc.php
