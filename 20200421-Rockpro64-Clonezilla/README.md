@@ -53,16 +53,16 @@
 ![](https://github.com/stevenshiau/atd-sharing/raw/master/20200421-Rockpro64-Clonezilla/3-rockpro-restore-ssd.png)
 
 - Boot progress:
-![download plain text file](https://github.com/stevenshiau/atd-sharing/raw/master/20200421-Rockpro64-Clonezilla/0-boot-process.txt)
+[download plain text file](https://github.com/stevenshiau/atd-sharing/raw/master/20200421-Rockpro64-Clonezilla/0-boot-process.txt)
 
 - The progress about saving the micro SD which has Armbian 20.02.1 Buster:
-![download plain text file](https://github.com/stevenshiau/atd-sharing/raw/master/20200421-Rockpro64-Clonezilla/4-save-sd.txt)
+[download plain text file](https://github.com/stevenshiau/atd-sharing/raw/master/20200421-Rockpro64-Clonezilla/4-save-sd.txt)
 
 - The progress about wiping the micro SD:
-![download plain text file](https://github.com/stevenshiau/atd-sharing/raw/master/20200421-Rockpro64-Clonezilla/5-wipe-sd.txt)
+[download plain text file](https://github.com/stevenshiau/atd-sharing/raw/master/20200421-Rockpro64-Clonezilla/5-wipe-sd.txt)
 
 - The progress about restoring the image to micro SD, then boot the restored Armbian:
-![download plain text file](https://github.com/stevenshiau/atd-sharing/raw/master/20200421-Rockpro64-Clonezilla/6-restore-sd.txt)
+[download plain text file](https://github.com/stevenshiau/atd-sharing/raw/master/20200421-Rockpro64-Clonezilla/6-restore-sd.txt)
 
 Bugs report, comments and suggestions are welcome.
 Thank you very much.
