@@ -43,25 +43,25 @@
 6. Wait a while, and you should be able to see the main menu of Clonezilla live, then you can save your disk as an image, restore the image, or clone the disks. More docs are available on Clonezilla website:
    - https://clonezilla.org/clonezilla-live-doc.php
 
-The photo about the test environment:
+- The photo about the test environment:
 ![](0-test-env.jpg)
 
-The rate about saving a SSD disk using -z9p (zstd) of Clonezilla option:
+- The rate about saving a SSD disk using -z9p (zstd) of Clonezilla option:
 ![](2-rockpro-save-ssd.png)
 
-Rate about restoring an image to SSD:
+- The rate about restoring an image to SSD:
 ![](3-rockpro-restore-ssd.png)
 
-Boot progress:
+- Boot progress:
 ![download plain text file](0-boot-process.txt)
 
-The progress about saving the micro SD which has Armbian 20.02.1 Buster:
+- The progress about saving the micro SD which has Armbian 20.02.1 Buster:
 ![download plain text file](4-save-sd.txt)
 
-The progress about wiping the micro SD:
+- The progress about wiping the micro SD:
 ![download plain text file](5-wipe-sd.txt)
 
-The progress about restoring the image to micro SD, then boot the restored Armbian:
+- The progress about restoring the image to micro SD, then boot the restored Armbian:
 ![download plain text file](6-restore-sd.txt)
 
 Bugs report, comments and suggestions are welcome.
