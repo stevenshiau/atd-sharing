@@ -1,0 +1,925 @@
+U-Boot 2020.01-01987-g335875f1f5 (Feb 01 2020 - 15:02:32 +0000)
+
+Model: Pine64 RockPro64
+DRAM:  3.9 GiB
+PMIC:  RK808
+MMC:   dwmmc@fe320000: 1, sdhci@fe330000: 0
+Loading Environment from SPI Flash... SF: Detected gd25q128 with page size 256 Bytes, erase size 4 KiB, total 16 MiB
+OK
+In:    serial@ff1a0000
+Out:   serial@ff1a0000
+Err:   serial@ff1a0000
+Model: Pine64 RockPro64
+Net:   eth0: ethernet@fe300000
+Hit any key to stop autoboot:  0
+=> setenv boot_targets usb0
+=> boot
+starting USB...
+Bus usb@fe380000: USB EHCI 1.00
+Bus usb@fe3c0000: USB EHCI 1.00
+Bus dwc3: Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.10
+Bus dwc3: Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.10
+scanning bus usb@fe380000 for devices... 1 USB Device(s) found
+scanning bus usb@fe3c0000 for devices... 2 USB Device(s) found
+scanning bus dwc3 for devices... 1 USB Device(s) found
+scanning bus dwc3 for devices... 1 USB Device(s) found
+       scanning usb for storage devices... 1 Storage Device(s) found
+
+Device 0: Vendor:          Rev: PMAP Prod: USB DISK 3.0
+            Type: Removable Hard Disk
+            Capacity: 14786.6 MB = 14.4 GB (30283008 x 512)
+... is now current device
+Scanning usb 0:1...
+Found EFI removable media binary efi/boot/grubaa64.efi
+1513336 bytes read in 43 ms (33.6 MiB/s)
+libfdt fdt_check_header(): FDT_ERR_BADMAGIC
+Scanning disk dwmmc@fe320000.blk...
+Card did not respond to voltage select!
+Scanning disk sdhci@fe330000.blk...
+Disk sdhci@fe330000.blk not ready
+Scanning disk usb_mass_storage.lun0...
+Found 4 disks
+Speed: 1000, full duplex
+error: file `/boot/grub/arm64-efi/efi_uga.mod' not found.
+error: no suitable video mode found.
+error: no video mode activated.
+error: file `/boot/grub/arm64-efi/play.mod' not found.
+error: can't find command `play'.
+
+
+                             GNU GRUB  version 2.04
+
+ ┌────────────────────────────────────────────────────────────────────────────┐
+ │*Clonezilla live (Default settings, VGA 800x600)                            │
+ │ Clonezilla live (Default settings, KMS with large font & To RAM)           │
+ │ Clonezilla live (Speech synthesis)                                         │
+ │ Other modes of Clonezilla live                                             │
+ │ Local operating system (if available)                                      │
+ │ uEFI firmware setup                                                        │
+ │ Clonezilla live 20200414-focal-arm64 info                                  │
+ │                                                                            │
+ │                                                                            │
+ │                                                                            │
+ │                                                                            │
+ │                                                                            │
+ └────────────────────────────────────────────────────────────────────────────┘
+
+      Use the ▲ and ▼ keys to select which entry is highlighted.
+      Press enter to boot the selected OS, `e' to edit the commands
+      before booting or `c' for a command-line.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                             GNU GRUB  version 2.04
+
+ ┌────────────────────────────────────────────────────────────────────────────┐
+ │setparams 'Clonezilla live (Default settings, VGA 800x600)'                 │
+ │                                                                            │
+ │  search --set -f /live/vmlinuz                                             │
+ │  linux /live/vmlinuz boot=live union=overlay quiet components noswap edd=o\│
+ │n nomodeset enforcing=0 noeject locales=en_US.UTF-8 keyboard-layouts=en ocs\│
+ │_live_run="ocs-live-general" ocs_live_extra_param="" ocs_live_batch="no" vg\│
+ │a=788 ip= net.ifnames=0  splash i915.blacklist=yes radeonhd.blacklist=yes n\│
+ │ouveau.blacklist=yes vmwgfx.enable_fbdev=1 ocs_live_run_tty=/dev/ttyS2      │
+ │  initrd /live/initrd.img                                                   │
+ │                                                                            │
+ │                                                                            │
+ │                                                                            │
+ └────────────────────────────────────────────────────────────────────────────┘
+
+      Minimum Emacs-like screen editing is supported. TAB lists
+      completions. Press Ctrl-x or F10 to boot, Ctrl-c or F2 for a
+      command-line or ESC to discard edits and return to the GRUB menu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                          Booting a command list
+
+Host not halted after 16000 microseconds.
+[   23.427898] Couldn't get size: Unknown error code (0x8000000000000003)
+[   23.428526] MODSIGN: Couldn't get UEFI db list
+[   23.428968] Couldn't get size: Unknown error code (0x8000000000000003)
+[   23.429623] Couldn't get size: Unknown error code (0x8000000000000003)
+[   24.442253] rk_gmac-dwmac fe300000.ethernet: IRQ eth_wake_irq not found
+[   24.442874] rk_gmac-dwmac fe300000.ethernet: IRQ eth_lpi not found
+[   24.443648] rk_gmac-dwmac fe300000.ethernet: phy regulator is not available yet, deferred probing
+[   24.449409] sdhci-arasan fe330000.sdhci: No phy for arasan,sdhci-5.1.
+[   24.466553] rk_gmac-dwmac fe300000.ethernet: IRQ eth_wake_irq not found
+[   24.467170] rk_gmac-dwmac fe300000.ethernet: IRQ eth_lpi not found
+[   24.467911] rk_gmac-dwmac fe300000.ethernet: phy regulator is not available yet, deferred probing
+[   24.482319] rk_gmac-dwmac fe300000.ethernet: IRQ eth_wake_irq not found
+[   24.482925] rk_gmac-dwmac fe300000.ethernet: IRQ eth_lpi not found
+[   24.483608] rk_gmac-dwmac fe300000.ethernet: phy regulator is not available yet, deferred probing
+[   24.486359] sdhci-arasan fe330000.sdhci: No phy for arasan,sdhci-5.1.
+[   24.497852] rk_gmac-dwmac fe300000.ethernet: IRQ eth_wake_irq not found
+[   24.498455] rk_gmac-dwmac fe300000.ethernet: IRQ eth_lpi not found
+[   24.499142] rk_gmac-dwmac fe300000.ethernet: phy regulator is not available yet, deferred probing
+[   24.501883] sdhci-arasan fe330000.sdhci: No phy for arasan,sdhci-5.1.
+[   24.586239] rk_gmac-dwmac fe300000.ethernet: IRQ eth_wake_irq not found
+[   24.586844] rk_gmac-dwmac fe300000.ethernet: IRQ eth_lpi not found
+[   24.587541] rk_gmac-dwmac fe300000.ethernet: phy regulator is not available yet, deferred probing
+[   24.590228] sdhci-arasan fe330000.sdhci: No phy for arasan,sdhci-5.1.
+[   24.596393] rk_gmac-dwmac fe300000.ethernet: IRQ eth_wake_irq not found
+[   24.597002] rk_gmac-dwmac fe300000.ethernet: IRQ eth_lpi not found
+[   24.597706] rk_gmac-dwmac fe300000.ethernet: phy regulator is not available yet, deferred probing
+[   24.600454] sdhci-arasan fe330000.sdhci: No phy for arasan,sdhci-5.1.
+[   24.666477] rockchip-usb2phy ff770000.syscon:usb2-phy@e450: failed to create phy
+[   24.668353] rockchip-usb2phy ff770000.syscon:usb2-phy@e460: failed to create phy
+[   24.685578] rk_gmac-dwmac fe300000.ethernet: IRQ eth_wake_irq not found
+[   24.686188] rk_gmac-dwmac fe300000.ethernet: IRQ eth_lpi not found
+[   24.686875] rk_gmac-dwmac fe300000.ethernet: phy regulator is not available yet, deferred probing
+[   24.689657] sdhci-arasan fe330000.sdhci: No phy for arasan,sdhci-5.1.
+[   24.693409] rockchip-usb2phy ff770000.syscon:usb2-phy@e450: failed to create phy
+[   24.696067] rockchip-usb2phy ff770000.syscon:usb2-phy@e460: failed to create phy
+[   24.817887] rk_gmac-dwmac fe300000.ethernet: IRQ eth_wake_irq not found
+[   24.818513] rk_gmac-dwmac fe300000.ethernet: IRQ eth_lpi not found
+[   24.819267] rk_gmac-dwmac fe300000.ethernet: phy regulator is not available yet, deferred probing
+[   24.872357] rockchip-usb2phy ff770000.syscon:usb2-phy@e450: failed to create phy
+[   24.876393] rockchip-usb2phy ff770000.syscon:usb2-phy@e460: failed to create phy
+[   24.885082] rk_gmac-dwmac fe300000.ethernet: IRQ eth_wake_irq not found
+[   24.885757] rk_gmac-dwmac fe300000.ethernet: IRQ eth_lpi not found
+[   24.886497] rk_gmac-dwmac fe300000.ethernet: phy regulator is not available yet, deferred probing
+[   24.892479] rockchip-usb2phy ff770000.syscon:usb2-phy@e450: failed to create phy
+[   24.948458] rockchip-usb2phy ff770000.syscon:usb2-phy@e460: failed to create phy
+[   24.953999] rk_gmac-dwmac fe300000.ethernet: IRQ eth_wake_irq not found
+[   24.954606] rk_gmac-dwmac fe300000.ethernet: IRQ eth_lpi not found
+[   24.955312] rk_gmac-dwmac fe300000.ethernet: phy regulator is not available yet, deferred probing
+[   24.959364] rockchip-usb2phy ff770000.syscon:usb2-phy@e450: failed to create phy
+[   24.978814] rockchip-usb2phy ff770000.syscon:usb2-phy@e460: failed to create phy
+[   24.983145] panfrost ff9a0000.gpu: failed to get regulator: -517
+[   24.983709] panfrost ff9a0000.gpu: regulator init failed -517
+[   24.989423] rk_gmac-dwmac fe300000.ethernet: IRQ eth_wake_irq not found
+[   24.990110] rk_gmac-dwmac fe300000.ethernet: IRQ eth_lpi not found
+[   24.990890] rk_gmac-dwmac fe300000.ethernet: phy regulator is not available yet, deferred probing
+[   25.000481] rockchip-usb2phy ff770000.syscon:usb2-phy@e450: failed to create phy
+[   25.004608] rockchip-usb2phy ff770000.syscon:usb2-phy@e460: failed to create phy
+[   25.006227] pwm-regulator vdd-log: Failed to get PWM: -517
+[   25.015791] rk_gmac-dwmac fe300000.ethernet: IRQ eth_wake_irq not found
+[   25.016471] rk_gmac-dwmac fe300000.ethernet: IRQ eth_lpi not found
+[   25.017391] rk_gmac-dwmac fe300000.ethernet: phy regulator is not available yet, deferred probing
+[   25.023172] panfrost ff9a0000.gpu: failed to get regulator: -517
+[   25.023732] panfrost ff9a0000.gpu: regulator init failed -517
+[   25.039846] pwm-regulator vdd-log: Failed to get PWM: -517
+[   25.204765] dwc3 fe800000.dwc3: Failed to get clk 'ref': -2
+[   25.212138] OF: graph: no port node found in /syscon@ff770000/usb2-phy@e450/otg-port
+[   25.213679] dwc3 fe900000.dwc3: Failed to get clk 'ref': -2
+[   25.218002] rk_gmac-dwmac fe300000.ethernet: IRQ eth_wake_irq not found
+[   25.218659] rk_gmac-dwmac fe300000.ethernet: IRQ eth_lpi not found
+[   25.219662] rk_gmac-dwmac fe300000.ethernet: cannot get clock clk_mac_speed
+[   25.350741] pwm-regulator vdd-log: Failed to get PWM: -517
+[   25.358010] pwm-regulator vdd-log: Failed to get PWM: -517
+[   25.445263] pwm-regulator vdd-log: Failed to get PWM: -517
+[   25.453490] pwm-regulator vdd-log: Failed to get PWM: -517
+ln: /tmp/mountroot-fail-hooks.d//scripts/init-premount/lvm2: No such file or directory
+[   27.107165] pwm-regulator vdd-log: Failed to get PWM: -517
+[   34.937649] pwm-regulator vdd-log: Failed to get PWM: -517
+[   34.966062] pwm-regulator vdd-log: Failed to get PWM: -517
+[   34.967304] pwm-regulator vdd-log: Failed to get PWM: -517
+[   35.984444] OF: graph: no port node found in /i2c@ff3d0000/typec-portc@22
+[   36.565656] spi0.0: error parsing ofpart partition /spi@ff1d0000/flash@0/partition@0 (/spi@ff1d0000/flash@0)
+Starting to prepare Clonezilla live env...
+Live media is in /run/live/medium
+Updating /etc/ocs/ocs-live.conf based on kernel parameters if found...
+done!
+/usr/bin/ckbcomp: Can not find file "symbols/en" in any known directory
+Trying to arm the wake on LAN for eth0... done!
+Finished Clonezilla live env preparing...
+
+Ubuntu Focal Fossa (development branch) debian ttyS2
+
+debian login: user (automatic login)
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+
+The jobs in /etc/ocs/ocs-live.d/ are finished. Start "ocs-live-general" now.
+ocs_live_run_tty is specified as /dev/ttyS2. Checking if the current tty is the specified one...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NCHC Free Software Labs, Taiwan
+
+
+
+
+
+         ┌───────────────────┤ Start Clonezilla ├────────────────────┐
+         │ Start Clonezilla or enter login shell (command line)?     │
+         │ Select mode:                                              │
+         │                                                           │
+         │        Start_Clonezilla Start Clonezilla                  │
+         │        Enter_shell      Enter command line prompt         │
+         │                                                           │
+         │                                                           │
+         │              <Ok>                  <Cancel>               │
+         │                                                           │
+         └───────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+ocslivemode is Start_Clonezilla
+Start Clonezilla now...
+
+NCHC Free Software Labs, Taiwan Opensource Clone System (OCS) ├────────────────┐
+│ *Clonezilla is free (GPL) software, and comes with ABSOLUTELY NO WARRANTY*   │
+│ ///Hint! From now on, if multiple choices are available, you have to press   │
+│ space key to mark your selection. An asterisk (*) will be shown when the     │
+│ selection is done///                                                         │
+│ Two modes are available, you can                                             │
+│ (1) clone/restore a disk or partition using an image                         │
+│ (2) disk to disk or partition to partition clone/restore.                    │
+│ Besides, Clonezilla lite server and client modes are also available. You can │
+│ use them for massive deployment                                              │
+│ Select mode:                                                                 │
+│                                                                              │
+│  device-image  work with disks or partitions using images                    │
+│  device-device work directly from a disk or partition to a disk or partitio  │
+│  remote-source Enter source mode of remote device cloning                    │
+│  remote-dest   Enter destination mode of remote device cloning               │
+│  lite-server   Enter_Clonezilla_live_lite_server                             │
+│  lite-client   Enter_Clonezilla_live_lite_client                             │
+│                                                                              │
+│                                                                              │
+│                     <Ok>                         <Cancel>                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+Clonezilla mode is device-image
+
+NCHC Free Software Labs, Taiwan
+
+
+┌─────────────────────┤ Mount Clonezilla image directory ├─────────────────────┐
+│ Before cloning, you have to assign where the Clonezilla image will be saved  │
+│ to or read from. We will mount that device or remote resources as            │
+│ /home/partimag. The Clonezilla image will be saved to or read from           │
+│ /home/partimag.                                                              │
+│                                                                              │
+│     local_dev    Use local device (E.g.: hard drive, USB drive)              │
+│     ssh_server   Use SSH server                                              │
+│     samba_server Use SAMBA server (Network Neighborhood server)              │
+│     nfs_server   Use NFS server                                              │
+│     enter_shell  Enter command line prompt. Do it manually                   │
+│     ram_disk     Use memory (OK for BT from raw device)                      │
+│     skip         Use existing /home/partimag (Memory! *NOT RECOMMENDED*)     │
+│                                                                              │
+│                                                                              │
+│                     <Ok>                         <Cancel>                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+ocsroot device is nfs_server
+Disable channnel bonding since there is only one NIC found.
+Try to up eth0...
+
+
+
+
+
+
+
+    ┌──────────────────────────┤ Network Config ├──────────────────────────┐
+    │ Choose the mode to setup the network for this network card: eth0     │
+    │                                                                      │
+    │        dhcp        Use DHCP broadcast                                │
+    │        static      Use static IP address                             │
+    │        pppoe       Use_PPPoE                                         │
+    │        enter_shell Enter_command_line_prompt._Do_it_manually         │
+    │                                                                      │
+    │                                                                      │
+    │                  <Ok>                      <Cancel>                  │
+    │                                                                      │
+    └──────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+Sending DHCP broadcast from device eth0
+Internet Systems Consortium DHCP Client 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+
+Listening on LPF/eth0/1a:1e:43:b5:66:6c
+Sending on   LPF/eth0/1a:1e:43:b5:66:6c
+Sending on   Socket/fallback
+DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 3 (xid=0x3c510241)
+DHCPOFFER of 192.168.76.2 from 192.168.76.254
+DHCPREQUEST for 192.168.76.2 on eth0 to 255.255.255.255 port 67 (xid=0x4102513c)
+DHCPACK of 192.168.76.2 from 192.168.76.254 (xid=0x3c510241)
+cmp: EOF on /tmp/tmp.z4pdq9e3jN which is empty
+bound to 192.168.76.2 -- renewal in 148 seconds.
+OK. Now writing the setting to network config file... Done!
+Preparing the mount point /home/partimag...
+Mounting remote directory on NFS (Ver 3) server as /home/partimag...
+
+NCHC Free Software Labs, Taiwan
+
+
+
+
+
+
+           ┌────────────────────┤ NFS version ├─────────────────────┐
+           │ Which version of NFS service do you want to mount?     │
+           │                                                        │
+           │                    nfs  NFS v2, v3                     │
+           │                    nfs4 NFS v4                         │
+           │                                                        │
+           │                                                        │
+           │             <Ok>                 <Cancel>              │
+           │                                                        │
+           └────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+NCHC Free Software Labs, Taiwan
+
+
+
+
+
+
+┌─────────────────────────────┤ Mount NFS server ├─────────────────────────────┐
+│ IP address or FQDN of the server. E.g. 192.168.120.254 or                    │
+│ hostname.domainname.org:                                                     │
+│                                                                              │
+│ 192.168.76.254______________________________________________________________ │
+│                                                                              │
+│                     <Ok>                         <Cancel>                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+NFS server is: 192.168.76.254
+
+NCHC Free Software Labs, Taiwan
+
+
+
+
+
+
+┌─────────────────────────────┤ Mount NFS server ├─────────────────────────────┐
+│ The directory where the Clonezilla image will be saved to or read from, Ex   │
+│ /home/partimag/:                                                             │
+│                                                                              │
+│ /home/partimag/_____________________________________________________________ │
+│                                                                              │
+│                     <Ok>                         <Cancel>                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+The path in nfs server is: /home/partimag/
+nfs-common service is necesary for NFS client. Start it now...
+Mounting NFS server by:
+LC_ALL=C mount -t nfs 192.168.76.254:/home/partimag/ /home/partimag -o noatime,nodiratime,nfsvers=3
+The file system disk space usage:
+*****************************************************.
+SOURCE                         FSTYPE  SIZE  USED AVAIL USE% TARGET
+192.168.76.254:/home/partimag/ nfs     8.8T  1.4T    7T  15% /home/partimag
+*****************************************************.
+Press "Enter" to continue......
+done!
+Setting the TERM as vt220
+Starting /usr/sbin/ocs-sr at 2020-04-01 17:41:51 UTC...
+
+NCHC Free Software Labs, Taiwan
+
+
+
+
+
+ ┌───────────────┤ Clonezilla - Opensource Clone System (OCS) ├───────────────┐
+ │ Choose the mode to run the following wizard about advanced parameters:     │
+ │                                                                            │
+ │             Beginner Beginner mode: Accept the default options             │
+ │             Expert   Expert mode: Choose your own options                  │
+ │             Exit     Exit. Enter command line prompt                       │
+ │                                                                            │
+ │                                                                            │
+ │                    <Ok>                        <Cancel>                    │
+ │                                                                            │
+ └────────────────────────────────────────────────────────────────────────────┘
+
+
+Choose the mode for ocs-sr
+
+NCHC Free Software Labs, Taiwanurce Clone System (OCS): Select mode ├──────────┐
+│ *Clonezilla is free (GPL) software, and comes with ABSOLUTELY NO WARRANTY*   │
+│ This software will overwrite the data on your hard drive when restoring! It  │
+│ is recommended to backup important files before restoring!***                │
+│ ///Hint! From now on, if multiple choices are available, you have to press   │
+│ space key to mark your selection. An asterisk (*) will be shown when the     │
+│ selection is done///                                                         │
+│                                                                              │
+│   savedisk            Save_local_disk_as_an_image                        ↑   │
+│   saveparts           Save_local_partitions_as_an_image                  ▮   │
+│   restoredisk         Restore_an_image_to_local_disk                     ▒   │
+│   restoreparts        Restore_an_image_to_local_partitions               ▒   │
+│   1-2-mdisks          Restore_an_image_to_multiple_local_disks           ▒   │
+│   recovery-iso-zip    Create_recovery_Clonezilla_live                    ▒   │
+│   chk-img-restorable  Check_the_image_restorable_or_not                  ▒   │
+│   cvt-img-compression Convert_image_compression_format_as_another_image  ▒   │
+│   encrypt-img         Encrypt_an_existing_unencrypted_image              ▒   │
+│   decrypt-img         Decrypt_an_existing_encrypted_image                ↓   │
+│                                                                              │
+│                                                                              │
+│                     <Ok>                         <Cancel>                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+*****************************************************.
+Clonezilla image dir: /home/partimag
+*****************************************************.
+Shutting down the Logical Volume Manager
+  Shutting Down volume group: debian-arm64-vg
+Finished Shutting down the Logical Volume Manager
+
+NCHC Free Software Labs, Taiwan
+
+
+
+
+
+
+
+       ┌┤ Clonezilla - Opensource Clone System (OCS) | Mode: savedisk ├┐
+       │ Input a name for the saved image to use                       │
+       │                                                               │
+       │ rockpro64-sd-debian-20200414_________________________________ │
+       │                                                               │
+       │                <Ok>                    <Cancel>               │
+       │                                                               │
+       └───────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+Excluding busy partition or disk...
+Disk number: 2
+
+NCHC Free Software Labs, Taiwan
+
+
+
+
+┌───────┤ Clonezilla - Opensource Clone System (OCS) | Mode: savedisk ├────────┐
+│ Choose local disk as source.                                                 │
+│ The disk name is the device name in GNU/Linux. The first disk in the system  │
+│ is "hda" or "sda", the 2nd disk is "hdb" or "sdb"... Press space key to mark │
+│ your selection. An asterisk (*) will be shown when the selection is done     │
+│                                                                              │
+│    [*] mmcblk0  32.0GB_Unknown_model_0x42baacdb                              │
+│    [ ] sdb      128GB_PLEXTOR_PX-AG128_PLEXTOR_PX-AG128M6e_P02516110461      │
+│                                                                              │
+│                                                                              │
+│                     <Ok>                         <Cancel>                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+Selected device [mmcblk0] found!
+The selected devices: mmcblk0
+
+NCHC Free Software Labs, Taiwan
+
+
+
+
+
+┌──────────┤ Clonezilla advanced extra parameters | Mode: savedisk ├───────────┐
+│ Choose the compression option. If you have no idea keep the default value    │
+│ and do NOT change anything.                                                  │
+│                                                                              │
+│  -z1p Use parallel gzip compression, for multicore/CPU                       │
+│  -z9p zstdmt_compression_(Very_fast_and_small_image_like_gzip,_for_multicor  │
+│                                                                              │
+│                                                                              │
+│                     <Ok>                         <Cancel>                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+NCHC Free Software Labs, Taiwan
+
+
+
+
+┌──────────┤ Clonezilla advanced extra parameters | Mode: savedisk ├───────────┐
+│ Choose if you want to check and repair the file system before saving it.     │
+│ This option is only for certain file systems which are well supported by     │
+│ fsck on GNU/Linux, like ext2/3/4, reiserfs, xfs, jfs, vfat. Not for NTFS,    │
+│                                                                              │
+│  -sfsck   Skip checking/repairing source file system                         │
+│  -fsck    Interactively check and repair source file system before saving    │
+│  -fsck-y  Auto (Caution!) check and repair source file system before saving  │
+│                                                                              │
+│                                                                              │
+│                     <Ok>                         <Cancel>                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+NCHC Free Software Labs, Taiwan
+
+
+
+
+
+┌──────────┤ Clonezilla advanced extra parameters | Mode: savedisk ├───────────┐
+│ After the image is saved, do you want to check if the image is restorable?   │
+│ ///NOTE/// This action will only check the image is restorable, and it will  │
+│ not write any data to the harddrive.                                         │
+│                                                                              │
+│                         Yes, check the saved image                           │
+│                   -scs  No, skip checking the saved image                    │
+│                                                                              │
+│                                                                              │
+│                     <Ok>                         <Cancel>                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+NCHC Free Software Labs, Taiwan
+
+
+
+┌──────────┤ Clonezilla advanced extra parameters | Mode: savedisk ├───────────┐
+│ Do you want to encrypt the image?                                            │
+│ If yes, eCryptfs program will be used to encrypt the image. It uses          │
+│ industry-standard cryptographic ciphers, key generation, and passphrase      │
+│ protection mechanisms. Without your salt/passphrase or private key, nobody   │
+│ will be able to retrieve your data.                                          │
+│ //NOTE// You have to remember the passphrase, otherwise the image will _NOT_ │
+│ be usable in the future.                                                     │
+│                                                                              │
+│                       -senc  Not to encrypt the image                        │
+│                       -enc   Encrypt the image                               │
+│                                                                              │
+│                                                                              │
+│                     <Ok>                         <Cancel>                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+NCHC Free Software Labs, Taiwan
+
+
+
+
+
+   ┌──────────────────────────┤ Mode: savedisk ├───────────────────────────┐
+   │ The action to perform when everything is finished:                    │
+   │                                                                       │
+   │  -p choose    Choose reboot/shutdown/etc when everything is finished  │
+   │  -p cmd       Enter command line prompt                               │
+   │  -p reboot    Reboot                                                  │
+   │  -p poweroff  Shutdown                                                │
+   │                                                                       │
+   │                                                                       │
+   │                  <Ok>                      <Cancel>                   │
+   │                                                                       │
+   └───────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+*****************************************************.
+PS. Next time you can run this command directly:
+/usr/sbin/ocs-sr -q2 -c -j2 -z9p -i 4096 -sfsck -senc -p choose savedisk rockpro64-sd-debian-20200414 mmcblk0
+This command is also saved as this file name for later use if necessary: /tmp/ocs-rockpro64-sd-debian-20200414-2020-04-01-17-49
+*****************************************************.
+Press "Enter" to continue...
+setterm: terminal vt220 does not support --blank
+Activating the partition info in /proc... done!
+Selected device [mmcblk0] found!
+The selected devices: mmcblk0
+Searching for data/swap/extended partition(s)...
+Excluding busy partition or disk...
+Unmounted partitions (including extended or swap): mmcblk0p1
+Collecting info.. done!
+The data partition to be saved: mmcblk0p1
+setterm: terminal vt220 does not support --blank
+Activating the partition info in /proc... done!
+Selected device [mmcblk0p1] found!
+The selected devices: mmcblk0p1
+Getting /dev/mmcblk0p1 info...
+*****************************************************.
+The following step is to save the hard disk/partition(s) on this machine as an image:
+*****************************************************.
+Machine: rockpro64_rk3399
+mmcblk0 (32.0GB_Unknown_model_0x42baacdb)
+mmcblk0p1 (29.5G_ext4_0x42baacdb)
+*****************************************************.
+-> "/home/partimag/rockpro64-sd-debian-20200414".
+Are you sure you want to continue? (y/n) y
+OK, let's do it!!
+Shutting down the Logical Volume Manager
+  Shutting Down volume group: debian-arm64-vg
+Finished Shutting down the Logical Volume Manager
+Saving block devices info in /home/partimag/rockpro64-sd-debian-20200414/blkdev.list...
+Saving block devices attributes in /home/partimag/rockpro64-sd-debian-20200414/blkid.list...
+Checking the integrity of partition table in the disk /dev/mmcblk0...
+Reading the partition table for /dev/mmcblk0...RETVAL=0
+*****************************************************.
+The first partition of disk /dev/mmcblk0 starts at 32768.
+Saving the hidden data between MBR (1st sector, i.e. 512 bytes) and 1st partition, which might be useful for some recovery tool, by:
+dd if=/dev/mmcblk0 of=/home/partimag/rockpro64-sd-debian-20200414/mmcblk0-hidden-data-after-mbr skip=1 bs=512 count=32767
+32767+0 records in
+32767+0 records out
+16776704 bytes (17 MB, 16 MiB) copied, 1.02854 s, 16.3 MB/s
+*****************************************************.
+done!
+Saving the MBR data for mmcblk0...
+1+0 records in
+1+0 records out
+512 bytes copied, 0.00752296 s, 68.1 kB/s
+*****************************************************.
+*****************************************************.
+Starting saving /dev/mmcblk0p1 as /home/partimag/rockpro64-sd-debian-20200414/mmcblk0p1.XXX...
+/dev/mmcblk0p1 filesystem: ext4.
+*****************************************************.
+Checking the disk space...
+*****************************************************.
+Use partclone with zstdmt to save the image.
+Image file will be split with size limit 4096 MB.
+*****************************************************.
+If this action fails or hangs, check:
+* Is the disk full ?
+*****************************************************.
+Run partclone: partclone.ext4 -z 10485760 -N -L /var/log/partclone.log -c -s /dev/mmcblk0p1 --output - | zstdmt -c -3 -T6 | split -a 2 -b 4096MB - /home/partimag/rockpro64-sd-debian-20200414/mmcblk0p1.ext4-ptcl-img.zst. 2> /tmp/split_error.BEs5Ll
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Partclone v0.3.13 http://partclone.org
+Starting to clone device (/dev/mmcblk0p1) to image (-)
+Reading Super Block
+Calculating bitmap... Please wait...
+Elapsed: 00:00:02, Remaining: 00:00:00, Completed: 100.00%
+Total Time: 00:00:02, 100.00% completed!
+done!
+File system:  EXTFS
+Device size:   31.6 GB = 7724556 Blocks
+Space in use:   1.7 GB = 419426 Blocks
+Free Space:    29.9 GB = 7305130 Blocks
+Block size:   4096 Byte
+Elapsed: 00:01:29, Remaining: 00:00:00, Completed: 100.00%, Rate:   1.16GB/min,
+current block:    7346176, total block:    7724556, Complete: 100.00%
+Total Time: 00:01:29, Ave. Rate:    1.2GB/min, 100.00% completed!
+Syncing... OK!
+Partclone successfully cloned the device (/dev/mmcblk0p1) to the image (-)
+Cloned successfully.
+Checking the disk space...
+>>> Time elapsed: 94.43 secs (~ 1.573 mins)
+Change mode to 600 for these files: /home/partimag/rockpro64-sd-debian-20200414/mmcblk0p1.ext4-ptcl-img.zst*
+*****************************************************.
+Finished saving /dev/mmcblk0p1 as /home/partimag/rockpro64-sd-debian-20200414/mmcblk0p1.ext4-ptcl-img.zst
+*****************************************************.
+Saving hardware info by lshw...
+Saving DMI info...
+Saving PCI info...
+Saving package info...
+End of saveparts job for image /home/partimag/rockpro64-sd-debian-20200414.
+*****************************************************.
+*****************************************************.
+This image was saved successfully: rockpro64-sd-debian-20200414
+End of savedisk job for image rockpro64-sd-debian-20200414.
+Start checking the saved image rockpro64-sd-debian-20200414 if restorable...
+Setting the TERM as vt220
+The image to be checked: rockpro64-sd-debian-20200414
+This is a whole disk image, saved from harddrive: mmcblk0
+The partition to be checked: mmcblk0p1
+setterm: terminal vt220 does not support --blank
+*****************************************************.
+Checking the partition table in the image "rockpro64-sd-debian-20200414"...
+Partition table file for disk was found: mmcblk0
+*****************************************************.
+Checking the swap partition info in the image "rockpro64-sd-debian-20200414"...
+Finding swap partition(s) in MBR table /home/partimag/rockpro64-sd-debian-20200414/mmcblk0-pt.sf...
+*****************************************************.
+Checking the MBR in the image "rockpro64-sd-debian-20200414"...
+MBR file for this disk was found: mmcblk0
+*****************************************************.
+Checking the partition mmcblk0p1 in the image "rockpro64-sd-debian-20200414"...
+*****************************************************.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Partclone v0.3.13 http://partclone.org
+Starting to check image (-)
+Calculating bitmap... Please wait...
+done!
+File system:  EXTFS
+Device size:   31.6 GB = 7724556 Blocks
+Space in use:   1.7 GB = 419426 Blocks
+Free Space:    29.9 GB = 7305130 Blocks
+Block size:   4096 Byte
+Elapsed: 00:00:30, Remaining: 00:00:00, Completed: 100.00%, Rate:   3.44GB/min,
+current block:    7346176, total block:    7724556, Complete: 100.00%
+Total Time: 00:00:30, Ave. Rate:    3.4GB/min, 100.00% completed!
+Partclone successfully checked the image (-)
+Checked successfully.
+The image of this partition is restorable: mmcblk0p1
+*****************************************************.
+All the images of partition or LV devices in this image were checked and they are restorable: rockpro64-sd-debian-20200414
+Summary of image checking:
+==========================
+Partition table file for disk was found: mmcblk0
+MBR file for this disk was found: mmcblk0
+The image of this partition is restorable: mmcblk0p1
+All the images of partition or LV devices in this image were checked and they are restorable: rockpro64-sd-debian-20200414
+==========================
+*****************************************************
+*****************************************************
+Checking if udevd rules have to be restored...
+This program is not started by Clonezilla server, so skip notifying it the job is done.
+Finished!
+Generating a tag file for this image...
+Now syncing - flush filesystem buffers...
+Ending /usr/sbin/ocs-sr at 2020-04-01 17:52:55 UTC...
+*****************************************************.
+If you want to use Clonezilla again:
+(1) Stay in this console (console 1), enter command line prompt
+(2) Run command "exit" or "logout"
+*****************************************************.
+When everything is done, remember to use 'poweroff', 'reboot' or follow the menu to do a normal poweroff/reboot procedure. Otherwise if the boot media you are using is a writable device (such as USB flash drive), and it's mounted, poweroff/reboot in abnormal procedure might make it FAIL to boot next time!
+*****************************************************.
+Press "Enter" to continue...
+"ocs-live-general" finished.
+Check /var/log/clonezilla.log for more details.
+
+Free Software Labs, NCHC, Taiwan
+
+
+
+
+┌───────────────────────────────┤ Choose mode ├────────────────────────────────┐
+│ Now you can choose to:                                                       │
+│                                                                              │
+│  poweroff Poweroff                                                           │
+│  reboot   Reboot                                                             │
+│  cmd      Enter command line prompt                                          │
+│  rerun1   Start over (image repository /home/partimag, if mounted, will be   │
+│  rerun2   Start_over_(keep_image_repository_/home/partimag_mounted)          │
+│  rerun3   Start_over_(Remount_subdir_in_medium_of_current_repository):_192.  │
+│                                                                              │
+│                                                                              │
+│                                    <Ok>                                      │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+The next step: cmd
+Now enter command line prompt...

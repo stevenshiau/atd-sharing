@@ -1,0 +1,464 @@
+root@debian:~# ocs-sr -x
+Setting the TERM as vt220
+Starting /usr/sbin/ocs-sr at 2020-04-01 17:58:26 UTC...
+
+NCHC Free Software Labs, Taiwan
+
+
+
+
+
+ ┌───────────────┤ Clonezilla - Opensource Clone System (OCS) ├───────────────┐
+ │ Choose the mode to run the following wizard about advanced parameters:     │
+ │                                                                            │
+ │             Beginner Beginner mode: Accept the default options             │
+ │             Expert   Expert mode: Choose your own options                  │
+ │             Exit     Exit. Enter command line prompt                       │
+ │                                                                            │
+ │                                                                            │
+ │                    <Ok>                        <Cancel>                    │
+ │                                                                            │
+ └────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+Choose the mode for ocs-sr
+
+NCHC Free Software Labs, Taiwanurce Clone System (OCS): Select mode ├──────────┐
+│ *Clonezilla is free (GPL) software, and comes with ABSOLUTELY NO WARRANTY*   │
+│ This software will overwrite the data on your hard drive when restoring! It  │
+│ is recommended to backup important files before restoring!***                │
+│ ///Hint! From now on, if multiple choices are available, you have to press   │
+│ space key to mark your selection. An asterisk (*) will be shown when the     │
+│ selection is done///                                                         │
+│                                                                              │
+│   savedisk            Save_local_disk_as_an_image                        ↑   │
+│   saveparts           Save_local_partitions_as_an_image                  ▒   │
+│   restoredisk         Restore_an_image_to_local_disk                     ▮   │
+│   restoreparts        Restore_an_image_to_local_partitions               ▒   │
+│   1-2-mdisks          Restore_an_image_to_multiple_local_disks           ▒   │
+│   recovery-iso-zip    Create_recovery_Clonezilla_live                    ▒   │
+│   chk-img-restorable  Check_the_image_restorable_or_not                  ▒   │
+│   cvt-img-compression Convert_image_compression_format_as_another_image  ▒   │
+│   encrypt-img         Encrypt_an_existing_unencrypted_image              ▒   │
+│   decrypt-img         Decrypt_an_existing_encrypted_image                ↓   │
+│                                                                              │
+│                                                                              │
+│                     <Ok>                         <Cancel>                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+*****************************************************.
+Clonezilla image dir: /home/partimag
+*****************************************************.
+Shutting down the Logical Volume Manager
+  Shutting Down volume group: debian-arm64-vg
+Finished Shutting down the Logical Volume Manager
+Searching for images.........................................................^@..........................................................................................................
+
+NCHC Free Software Labs, Taiwane Clone System (OCS) | Mode: restoredisk ├──────┐
+│ Choose the image file to restore:                                            │
+│                                                                              │
+│  rhel8ws-efi-20190611                2019-0611-0327_nvme0n1_21.5GB         ↑ │
+│  rockpro64-sd-debian-20200414        2020-0401-1752_mmcblk0_32.0GB         ▒ │
+│  rockpro64-test-debian               2020-0318-1947_sdb_128GB              ▒ │
+│  sm-bionic64-160G-20191220           2019-1220-0244_sda_160GB              ▒ │
+│  sm-bionic64-2TB-20190906            2019-0906-0536_sda_2000GB             ▒ │
+│  sm-bionic64-500G-20190906           2019-0906-0700_sda_500GB              ▒ │
+│  sm-bionic86-80G-20191220            2019-1220-0502_sda_80.0GB             ▒ │
+│  squeeze-btrfs-jfs-20160624          2016-0624-1459_sda_8590MB             ▒ │
+│  squeeze-released-btrfs-xfs          2011-0206-1050_sda                    ▮ │
+│  stretch-arm64-qemu-20180220         2018-0220-0801_vda_8590MB             ▒ │
+│  stretch-x64-20170626                2017-0626-1459_sda_8590MB             ▒ │
+│  stretch-x64-20171203-lz4            2017-1203-0446_sda_8590MB             ▒ │
+│  swift7-win10-20190705               2019-0706-0108_nvme0n1_512GB          ▒ │
+│  swift7-win10-20190705-zst           2019-0706-0221_nvme0n1_512GB          ▒ │
+│  swift7-win10-bionic-20200305        2020-0305-0300_nvme0n1_512GB          ↓ │
+│                                                                              │
+│                                                                              │
+│                     <Ok>                         <Cancel>                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+Excluding busy partition or disk...
+Disk number: 2
+Error: /dev/mmcblk0: unrecognised disk label
+
+NCHC Free Software Labs, Taiwan
+
+
+
+
+┌──────┤ Clonezilla - Opensource Clone System (OCS) | Mode: restoredisk ├──────┐
+│ Choose the target disk(s) to be overwritten (ALL DATA ON THE ENTIRE DISK     │
+│ WILL BE LOST AND REPLACED!!)                                                 │
+│ The disk name is the device name in GNU/Linux. The first disk in the system  │
+│ is "hda" or "sda", the 2nd disk is "hdb" or "sdb"... Press space key to mark │
+│ your selection. An asterisk (*) will be shown when the selection is done     │
+│                                                                              │
+│       mmcblk0 32.0GB_Unknown_model_0x42baacdb                                │
+│       sdb     128GB_PLEXTOR_PX-AG128_PLEXTOR_PX-AG128M6e_P02516110461        │
+│                                                                              │
+│                                                                              │
+│                     <Ok>                         <Cancel>                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+NCHC Free Software Labs, Taiwan
+
+
+
+
+
+┌─────────┤ Clonezilla advanced extra parameters | Mode: restoredisk ├─────────┐
+│ Before restoring the image, do you want to check if the image is restorable  │
+│ or not? ///NOTE/// This action will only check the image is restorable or    │
+│ not, and it will not write any data to the harddrive.                        │
+│                                                                              │
+│                    Yes, check the image before restoring                     │
+│              -scr  No, skip checking the image before restoring              │
+│                                                                              │
+│                                                                              │
+│                     <Ok>                         <Cancel>                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+NCHC Free Software Labs, Taiwan
+
+
+
+
+
+   ┌─────────────────────────┤ Mode: restoredisk ├─────────────────────────┐
+   │ The action to perform when everything is finished:                    │
+   │                                                                       │
+   │  -p choose    Choose reboot/shutdown/etc when everything is finished  │
+   │  -p cmd       Enter command line prompt                               │
+   │  -p reboot    Reboot                                                  │
+   │  -p poweroff  Shutdown                                                │
+   │                                                                       │
+   │                                                                       │
+   │                  <Ok>                      <Cancel>                   │
+   │                                                                       │
+   └───────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+*****************************************************.
+PS. Next time you can run this command directly:
+/usr/sbin/ocs-sr -g auto -e1 auto -e2 -r -j2 -c -scr -p choose restoredisk rockpro64-sd-debian-20200414 mmcblk0
+This command is also saved as this file name for later use if necessary: /tmp/ocs-rockpro64-sd-debian-20200414-2020-04-01-18-07
+*****************************************************.
+Press "Enter" to continue...
+setterm: terminal vt220 does not support --blank
+Activating the partition info in /proc... done!
+Error: /dev/mmcblk0: unrecognised disk label
+*****************************************************.
+The following step is to restore an image to the hard disk/partition(s) on this machine: "/home/partimag/rockpro64-sd-debian-20200414" -> "mmcblk0 mmcblk0p1"
+The image was created at: 2020-0401-1752
+WARNING!!! WARNING!!! WARNING!!!
+WARNING. THE EXISTING DATA IN THIS HARDDISK/PARTITION(S) WILL BE OVERWRITTEN! ALL EXISTING DATA WILL BE LOST:
+*****************************************************.
+Machine: rockpro64_rk3399
+mmcblk0 (32.0GB_Unknown_model_0x42baacdb)
+*****************************************************.
+Are you sure you want to continue? (y/n) y
+OK, let's do it!!
+This program is not started by clonezilla server.
+*****************************************************.
+Let me ask you again.
+The following step is to restore an image to the hard disk/partition(s) on this machine: "/home/partimag/rockpro64-sd-debian-20200414" -> "mmcblk0 mmcblk0p1"
+The image was created at: 2020-0401-1752
+WARNING!!! WARNING!!! WARNING!!!
+WARNING. THE EXISTING DATA IN THIS HARDDISK/PARTITION(S) WILL BE OVERWRITTEN! ALL EXISTING DATA WILL BE LOST:
+*****************************************************.
+Machine: rockpro64_rk3399
+mmcblk0 (32.0GB_Unknown_model_0x42baacdb)
+*****************************************************.
+Are you sure you want to continue? (y/n) y
+OK, let's do it!!
+Shutting down the Logical Volume Manager
+  Shutting Down volume group: debian-arm64-vg
+Finished Shutting down the Logical Volume Manager
+Creating partition in /dev/mmcblk0...
+Excluding busy partition or disk...
+Unmounted partitions (including extended or swap):
+Collecting info. done!
+Trying to clean the MBR and GPT partition table on the destination disk first: /dev/mmcblk0
+Informing the OS of partition table changes... done!
+Non-grub boot loader found on /home/partimag/rockpro64-sd-debian-20200414/mmcblk0-mbr...
+The CHS value of hard drive from EDD will be used for sfdisk.
+Sfdisk >= 2.26 does not support C/H/S option. Skip using C/H/S option.
+Error: /dev/mmcblk0: unrecognised disk label
+*****************************************************.
+Wed Apr  1 18:08:15 UTC 2020
+Writing the partition table...
+No partition table exists in target disk /dev/mmcblk0, try to initialize one so that we can get the disk size by parted... Running: parted -s /dev/mmcblk0 mklabel msdos
+done!
+Running: LC_ALL=C sfdisk --force /dev/mmcblk0 < /home/partimag/rockpro64-sd-debian-20200414/mmcblk0-pt.sf 2>&1 | tee -a /var/log/clonezilla.log
+Checking that no-one is using this disk right now ... OK
+
+Disk /dev/mmcblk0: 29.8 GiB, 31976325120 bytes, 62453760 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x918bfc5b
+
+Old situation:
+
+>>> Script header accepted.
+>>> Script header accepted.
+>>> Script header accepted.
+>>> Script header accepted.
+>>> Created a new DOS disklabel with disk identifier 0x019a33bc.
+/dev/mmcblk0p1: Created a new partition 1 of type 'Linux' and of size 29.5 GiB.
+/dev/mmcblk0p2: Done.
+
+New situation:
+Disklabel type: dos
+Disk identifier: 0x019a33bc
+
+Device         Boot Start      End  Sectors  Size Id Type
+/dev/mmcblk0p1      32768 61829215 61796448 29.5G 83 Linux
+
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+This was done by: LC_ALL=C sfdisk --force /dev/mmcblk0 < /home/partimag/rockpro64-sd-debian-20200414/mmcblk0-pt.sf 2>&1 | tee -a /var/log/clonezilla.log
+Checking the integrity of partition table in the disk /dev/mmcblk0...
+*****************************************************.
+Informing the OS of partition table changes.... done!
+*****************************************************.
+The first partition of disk /dev/mmcblk0 starts at 32768.
+Restoring the hidden data between MBR (1st sector, i.e. 512 bytes) and 1st partition, which might be useful for some recovery tool, by:
+dd if=/home/partimag/rockpro64-sd-debian-20200414/mmcblk0-hidden-data-after-mbr of=/dev/mmcblk0 seek=1 bs=512 count=32767
+32767+0 records in
+32767+0 records out
+16776704 bytes (17 MB, 16 MiB) copied, 3.89288 s, 4.3 MB/s
+Informing the OS of partition table changes.... done!
+*****************************************************.
+*****************************************************.
+Restoring partition /dev/mmcblk0p1...
+*****************************************************.
+*****************************************************.
+Clean filesystem header in device /dev/mmcblk0p1...
+*****************************************************.
+Starting unicast restoring image rockpro64-sd-debian-20200414 to /dev/mmcblk0p1...
+If this action fails or hangs, check:
+* Is the saved image /home/partimag/rockpro64-sd-debian-20200414/mmcblk0p1.ext4-ptcl-img.zst.* corrupted ?
+*****************************************************.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Partclone v0.3.13 http://partclone.org
+Starting to restore image (-) to device (/dev/mmcblk0p1)
+Calculating bitmap... Please wait...
+done!
+File system:  EXTFS
+Device size:   31.6 GB = 7724556 Blocks
+Space in use:   1.7 GB = 419426 Blocks
+Free Space:    29.9 GB = 7305130 Blocks
+Block size:   4096 Byte
+Elapsed: 00:01:34, Remaining: 00:00:00, Completed: 100.00%, Rate:   1.10GB/min,
+current block:    7346176, total block:    7724556, Complete: 100.00%
+Total Time: 00:01:34, Ave. Rate:    1.1GB/min, 100.00% completed!
+Syncing... OK!
+Partclone successfully restored the image (-) to the device (/dev/mmcblk0p1)
+Cloned successfully.
+>>> Time elapsed: 150.80 secs (~ 2.513 mins)
+Finished unicast restoring image rockpro64-sd-debian-20200414 to /dev/mmcblk0p1.
+Informing the OS of partition table changes.... done!
+*****************************************************.
+Finding swap partition(s) in MBR table /home/partimag/rockpro64-sd-debian-20200414/mmcblk0-pt.sf...
+Probing mmcblk0 with blockdev before restoring EBR...
+Finding extended partition(s) in parted table /home/partimag/rockpro64-sd-debian-20200414/mmcblk0-pt.parted...
+Running: ocs-restore-mbr --ocsroot /home/partimag  rockpro64-sd-debian-20200414 mmcblk0
+Setting the TERM as vt220
+Restoring the first 446 bytes of MBR data (executable code area) for mmcblk0 by:
+dd if=/home/partimag/rockpro64-sd-debian-20200414/mmcblk0-mbr of=/dev/mmcblk0 bs=446 count=1 &>/dev/null
+done.
+*****************************************************.
+Now tuning the file system size on partition /dev/mmcblk0p1 to fit the partition size...
+Running: ocs-resize-part  --batch /dev/mmcblk0p1
+e2fsck -f -y /dev/mmcblk0p1; resize2fs -p -f /dev/mmcblk0p1
+e2fsck 1.45.5 (07-Jan-2020)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+/dev/mmcblk0p1: 36222/1925760 files (0.1% non-contiguous), 419426/7724556 blocks
+resize2fs 1.45.5 (07-Jan-2020)
+The filesystem is already 7724556 (4k) blocks long.  Nothing to do!
+
+*****************************************************.
+Running: ocs-tux-postprocess mmcblk0p1
+Trying to remove udev hardware record in the restored OS...
+The specified destination device: mmcblk0p1
+Trying to remove udev persistent files. The devices to be searched: mmcblk0p1...
+Now searching possible device /dev/mmcblk0p1...
+removed '/tmp/hd_img.ZCsT6E/var/lib/dbus/machine-id'
+removed '/tmp/hd_img.ZCsT6E/etc/machine-id'
+Found the file system and mount point to re-generate machine id: /dev/mmcblk0p1, /tmp/hd_img.ZCsT6E
+Initializing machine ID from random generator.
+chcon: failed to get security context of '/tmp/hd_img.ZCsT6E/etc/issue': No data available
+chcon: can't apply partial context to unlabeled file '/tmp/hd_img.ZCsT6E/etc/machine-id'
+done!
+*****************************************************.
+Running: ocs-update-syslinux -b mmcblk0p1
+Device /dev/mmcblk0p1 is not a FAT partition.
+Skip updating syslinux on that.
+*****************************************************.
+Running: ocs-install-grub -p "mmcblk0p1 " auto
+The grub directory is NOT found. Maybe it does not exist (so other boot manager exists) or the file system is not supported in the kernel. Skip running grub-install.
+*****************************************************.
+Running: ocs-update-initrd -p "mmcblk0p1 " auto
+The boot and grub directory was NOT found. Maybe it does not exist (so other boot manager exists) or the file system is not supported in the kernel. Skip running .
+*****************************************************.
+Running: run_ntfsreloc_part -p "mmcblk0p1" auto
+The NTFS boot partition was not found or not among the restored partition(s). Skip running partclone.ntfsfixboot.
+*****************************************************.
+End of restoreparts job for image rockpro64-sd-debian-20200414.
+End of restoredisk job for image rockpro64-sd-debian-20200414.
+*****************************************************
+*****************************************************
+Checking if udevd rules have to be restored...
+This program is not started by Clonezilla server, so skip notifying it the job is done.
+Finished!
+Now syncing - flush filesystem buffers...
+Ending /usr/sbin/ocs-sr at 2020-04-01 18:11:55 UTC...
+root@debian:~# reboot
+root@debian:~# [ 3056.067252] [23743]: Failed to unmount /run/live/medium: Device or resource busy
+[ 3056.072613] systemd-shutdown[1]: Could not detach loopback /dev/loop0: Device or resource busy
+[ 3056.340623] systemd-shutdown[1]: Failed to finalize  file systems, loop devices, ignoring
+[ 3056.394139] reboot: Restarting system
+
+U-Boot TPL 2020.01-01987-g335875f1f5 (Feb 01 2020 - 15:02:32)
+Channel 0: LPDDR4, 50MHz
+BW=32 Col=10 Bk=8 CS0 Row=15 CS1 Row=15 CS=2 Die BW=16 Size=2048MB
+Channel 1: LPDDR4, 50MHz
+BW=32 Col=10 Bk=8 CS0 Row=15 CS1 Row=15 CS=2 Die BW=16 Size=2048MB
+256B stride
+256B stride
+lpddr4_set_rate: change freq to 400000000 mhz 0, 1
+lpddr4_set_rate: change freq to 800000000 mhz 1, 0
+Trying to boot from BOOTROM
+Returning to boot ROM...
+
+U-Boot SPL 2020.01-01987-g335875f1f5 (Feb 01 2020 - 15:02:32 +0000)
+Trying to boot from SPI
+NOTICE:  BL31: v2.2(release):v2.2-271-g9a943ba43
+NOTICE:  BL31: Built : 15:00:49, Feb  1 2020
+
+
+U-Boot 2020.01-01987-g335875f1f5 (Feb 01 2020 - 15:02:32 +0000)
+
+Model: Pine64 RockPro64
+DRAM:  3.9 GiB
+PMIC:  RK808
+MMC:   dwmmc@fe320000: 1, sdhci@fe330000: 0
+Loading Environment from SPI Flash... SF: Detected gd25q128 with page size 256 Bytes, erase size 4 KiB, total 16 MiB
+OK
+In:    serial@ff1a0000
+Out:   serial@ff1a0000
+Err:   serial@ff1a0000
+Model: Pine64 RockPro64
+Net:   eth0: ethernet@fe300000
+Hit any key to stop autoboot:  0
+Card did not respond to voltage select!
+switch to partitions #0, OK
+mmc1 is current device
+Scanning mmc 1:1...
+Found U-Boot script /boot/boot.scr
+2940 bytes read in 6 ms (478.5 KiB/s)
+## Executing script at 00500000
+Boot script loaded from mmc 1
+151 bytes read in 5 ms (29.3 KiB/s)
+6758876 bytes read in 291 ms (22.2 MiB/s)
+19752968 bytes read in 838 ms (22.5 MiB/s)
+96273 bytes read in 16 ms (5.7 MiB/s)
+## Loading init Ramdisk from Legacy Image at 04000000 ...
+   Image Name:   uInitrd
+   Image Type:   AArch64 Linux RAMDisk Image (gzip compressed)
+   Data Size:    6758812 Bytes = 6.4 MiB
+   Load Address: 00000000
+   Entry Point:  00000000
+   Verifying Checksum ... OK
+## Flattened Device Tree blob at 01f00000
+   Booting using the fdt blob at 0x1f00000
+   Loading Ramdisk to f588a000, end f5efc19c ... OK
+ERROR: reserving fdt memory region failed (addr=0 size=0)
+   Loading Device Tree to 00000000f580a000, end 00000000f5889fff ... OK
+
+Starting kernel ...
+
+
+Armbian 20.02.1 Buster ttyS2
+
+rockpro64 login: steven
+Password:
+Last login: Tue Apr 14 07:39:06 UTC 2020 on ttyS2
+ ____            _    ____               __   _  _
+|  _ \ ___   ___| | _|  _ \ _ __ ___    / /_ | || |
+| |_) / _ \ / __| |/ / |_) | '__/ _ \  | '_ \| || |_
+|  _ < (_) | (__|   <|  __/| | | (_) | | (_) |__   _|
+|_| \_\___/ \___|_|\_\_|   |_|  \___/   \___/   |_|
+
+Welcome to Armbian buster with Linux 4.4.213-rockchip64
+
+System load:   0.89 0.27 0.10   Up time:       0 min
+Memory usage:  2 % of 3810MB    IP:            192.168.76.10
+CPU temp:      45°C
+Usage of /:    4% of 29G
+
+
+steven@rockpro64:~$ w
+ 09:10:07 up 0 min,  1 user,  load average: 0.98, 0.30, 0.11
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+steven   ttyS2    -                09:10    4.00s  0.20s  0.01s w
+steven@rockpro64:~$ df
+Filesystem     1K-blocks    Used Available Use% Mounted on
+udev             1947184       0   1947184   0% /dev
+tmpfs             390212   10248    379964   3% /run
+/dev/mmcblk0p1  30381996 1161492  28880932   4% /
+tmpfs            1951060       0   1951060   0% /dev/shm
+tmpfs               5120       4      5116   1% /run/lock
+tmpfs            1951060       0   1951060   0% /sys/fs/cgroup
+tmpfs            1951060       4   1951056   1% /tmp
+/dev/zram0         49584    4736     41264  11% /var/log
+tmpfs             390212       0    390212   0% /run/user/1000
+steven@rockpro64:~$ sudo poweroff
